@@ -9,5 +9,7 @@ package latihanKu;
  * @author ASUS
  */
 public class sepedaClass {
-    
+    String merk, jenis, warna, nomorSeri, material, ukuranFrame;
+    int tahunProduksi, jumlahGigi, jumlahBan;
+    double harga, berat;
 }
