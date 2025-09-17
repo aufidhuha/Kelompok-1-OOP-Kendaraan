@@ -54,10 +54,10 @@ public class pesawatClass {
         return this.tahun_produksi;
     }
     
-    public void setjam_terbang(int harga){
+    public void setHarga(int harga){
         this.harga = harga;
     }
-    public int getjam_terbang(){
+    public int getHarga(){
         return this.harga;
     }
 }
