@@ -9,6 +9,7 @@ package latihanKu;
  * @author ASUS
  */
 public class truckClass {
+    
     String Merek, Tipe, warna,mesin;
     int tahun_Produksi, harga;
     
