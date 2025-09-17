@@ -9,17 +9,10 @@ package latihanKu;
  * @author ASUS
  */
 public class motorClass {
-    String plat_nomor,merek,model,warna;
-    int kapasitasCc,tahun_pembuatan;
+    String merek,tipe,warna;
+    int tahun_pembuatan;
     double harga;
     boolean status_pajak;
-    
-    public void setplat_nomor(String plat_nomorQ){
-        this.plat_nomor = plat_nomorQ;
-    }
-    public String getplat_nomor(){
-        return this.plat_nomor;
-    }
     
     public void setmerek(String merekQ){
         this.merek = merekQ;
@@ -28,11 +21,11 @@ public class motorClass {
         return this.merek;
     }
     
-    public void setmodel(String modelQ){
-        this.model = modelQ;
+    public void settipe(String tipeQ){
+        this.tipe = tipeQ;
     }
-    public String getmodel(){
-        return this.model;
+    public String gettipe(){
+        return this.tipe;
     }
     
     public void setwarna(String warnaQ){
@@ -40,13 +33,6 @@ public class motorClass {
     }
     public String getwarna(){
         return this.warna;
-    }
-    
-    public void setkapasitasCc(int kapasitasCcQ){
-        this.kapasitasCc = kapasitasCcQ;
-    }
-    public int getkapasitasCc(){
-        return this.kapasitasCc;
     }
     
     public void settahun_pembuatan(int tahun_pembuatanQ){
