@@ -9,49 +9,56 @@ package latihanKu;
  * @author ASUS
  */
 public class sepedaClass {
+
     String merk, tipe, warna;
-    int tahunProduksi;
-    double harga, berat;
-   
-    public void setmerk(String merk){
+    int tahunProduksi, harga;
+    double berat;
+
+    public void setmerk(String merk) {
         this.merk = merk;
     }
-    public String getmerk(){
+
+    public String getmerk() {
         return this.merk;
-    }  
-    
-    public void settipe(String tipe){
+    }
+
+    public void settipe(String tipe) {
         this.tipe = tipe;
     }
-    public String gettipe(){
+
+    public String gettipe() {
         return this.tipe;
     }
-    
-    public void setwarna(String warna){
+
+    public void setwarna(String warna) {
         this.warna = warna;
     }
-    public String getwarna(){
+
+    public String getwarna() {
         return this.warna;
     }
-    
-    public void settahunProduksi(int tahunProduksi){
+
+    public void settahunProduksi(int tahunProduksi) {
         this.tahunProduksi = tahunProduksi;
     }
-    public int gettahunProduksi(){
+
+    public int gettahunProduksi() {
         return this.tahunProduksi;
     }
-    
-    public void setharga(double harga){
+
+    public void setharga(int harga) {
         this.harga = harga;
     }
-    public double getharga(){
+
+    public int getharga() {
         return this.harga;
     }
-    
-    public void setberat(double berat){
+
+    public void setberat(double berat) {
         this.berat = berat;
     }
-    public double getberat(){
-        return this.berat;
+
+    public String getberat() {
+        return this.berat + " Kg";
     }
 }

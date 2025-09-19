@@ -69,7 +69,7 @@ public class keretaApiClass {
     
     
     public void berjalan(){
-        System.out.println("Kereta api " + this.namaKereta + " berjalan dari Stasiun " + this.stasiunAwal);
+        System.out.println("Kereta api " + this.namaKereta + " berangkat dari Stasiun " + this.stasiunAwal);
     }
     
     public void berhenti(){
