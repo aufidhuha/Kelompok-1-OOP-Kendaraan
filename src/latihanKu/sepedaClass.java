@@ -52,6 +52,6 @@ public class sepedaClass {
         this.berat = berat;
     }
     public double getberat(){
-        return this.berat;
+            return this.berat;
     }
 }
