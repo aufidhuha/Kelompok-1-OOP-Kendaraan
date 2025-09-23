@@ -43,7 +43,7 @@ public class truckClass {
     public int gettahunProduk(){
        return this.tahun_Produksi;
     }
-    public void setMerek(int Harga){
+    public void setharga(int Harga){
         this.harga = Harga;
     }
     public int getharga(){
