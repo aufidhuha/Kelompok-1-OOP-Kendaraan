@@ -9,8 +9,8 @@ package latihanKu;
  * @author ASUS
  */
 public class pesawatClass {
-    String noreg, jenis, maskapai, nomor_seri, pangkalan;
-    int tahun_produksi, jam_terbang;
+    String noreg, jenis, maskapai, nomor_seri, pangkalan, jam_terbang;
+    int tahun_produksi;
     
     public void setnoreg(String noreg){
         this.noreg = noreg;
@@ -54,10 +54,10 @@ public class pesawatClass {
         return this.tahun_produksi;
     }
     
-    public void setjam_terbang(int jam_terbang){
+    public void setjam_terbang(String jam_terbang){
         this.jam_terbang = jam_terbang;
     }
-    public int getjam_terbang(){
+    public String getjam_terbang(){
         return this.jam_terbang;
     }
 }
