@@ -4,6 +4,8 @@
  */
 package latihanKu;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ASUS
@@ -15,8 +17,34 @@ public class FrameKeretaApi extends javax.swing.JFrame {
      */
     public FrameKeretaApi() {
         initComponents();
+        
+        reset();
     }
 
+    
+    void reset(){
+        txtHarga.setText(null);
+        txtMerkKereta.setText(null);
+        txtTipeKereta.setText(null);
+        txtStasiunAwal.setText(null);
+        txtStasiunAkhir.setText(null);
+        txtTahun.setText(null);
+        labelHarga.setText("-");
+        labelMerkKereta.setText("-");
+        labelTipeKereta.setText("-");
+        labelTahun.setText("-");
+        labelStasiunAwal.setText("-");
+        labelStasiunAkhir.setText("-");
+    }
+    
+    void clear(){
+        txtHarga.setText(null);
+        txtMerkKereta.setText(null);
+        txtTipeKereta.setText(null);
+        txtStasiunAwal.setText(null);
+        txtStasiunAkhir.setText(null);
+        txtTahun.setText(null);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -182,21 +210,14 @@ public class FrameKeretaApi extends javax.swing.JFrame {
                             .addGap(22, 22, 22)))
                     .addComponent(jLabel13)
                     .addComponent(jLabel12))
-                .addGap(96, 96, 96)
+                .addGap(102, 102, 102)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(labelTahun)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(labelStasiunAkhir)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                            .addComponent(labelStasiunAwal)
-                            .addGap(3, 3, 3))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                            .addComponent(labelMerkKereta)
-                            .addGap(12, 12, 12))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                            .addComponent(labelTipeKereta)
-                            .addGap(22, 22, 22)))
-                    .addComponent(labelHarga))
+                    .addComponent(labelTipeKereta)
+                    .addComponent(labelStasiunAwal)
+                    .addComponent(labelMerkKereta)
+                    .addComponent(labelStasiunAkhir)
+                    .addComponent(labelHarga)
+                    .addComponent(labelTahun))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -211,27 +232,25 @@ public class FrameKeretaApi extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel10)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel11))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel11)
+                            .addComponent(labelStasiunAkhir)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(labelTipeKereta)
                         .addGap(18, 18, 18)
                         .addComponent(labelMerkKereta)
                         .addGap(18, 18, 18)
                         .addComponent(labelStasiunAwal)
-                        .addGap(18, 18, 18)
-                        .addComponent(labelStasiunAkhir)))
+                        .addGap(38, 38, 38)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel12)
-                            .addComponent(labelHarga))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel13))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(labelTahun)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelHarga)
+                    .addComponent(jLabel12))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelTahun)
+                    .addComponent(jLabel13))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         jButton1.setBackground(new java.awt.Color(0, 102, 0));
@@ -326,7 +345,7 @@ public class FrameKeretaApi extends javax.swing.JFrame {
                     .addComponent(txtStasiunAkhir, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
                 .addGap(48, 48, 48)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -337,7 +356,7 @@ public class FrameKeretaApi extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -352,14 +371,25 @@ public class FrameKeretaApi extends javax.swing.JFrame {
         // TODO add your handling code here:
         keretaApiClass keretaApi = new keretaApiClass();
         
-        keretaApi.setTipeKereta(txtTipeKereta.getText());
-        keretaApi.setNamaKereta(txtMerkKereta.getText());
-        keretaApi.setStatiunAwal(txtTipeKereta.getText());
-        keretaApi.setStasiunAkhir(txtTipeKereta.getText());
-        keretaApi.setHarga(Integer.parseInt(txtTipeKereta.getText()));
-        keretaApi.setTahunProduksi(Integer.parseInt(txtTipeKereta.getText()));
-        
-        
+        try {
+            keretaApi.setTipeKereta(txtTipeKereta.getText());
+            keretaApi.setNamaKereta(txtMerkKereta.getText());
+            keretaApi.setStatiunAwal(txtStasiunAwal.getText());
+            keretaApi.setStasiunAkhir(txtStasiunAkhir.getText());
+            keretaApi.setHarga(Integer.parseInt(txtHarga.getText()));
+            keretaApi.setTahunProduksi(Integer.parseInt(txtTahun.getText()));
+            
+            labelTipeKereta.setText(keretaApi.getTipeKereta());
+            labelMerkKereta.setText(keretaApi.getNamaKereta());
+            labelStasiunAwal.setText(keretaApi.getStasiunAwal());
+            labelStasiunAkhir.setText(keretaApi.getStasiunAkhir());
+            labelHarga.setText(String.valueOf(keretaApi.getHarga()));
+            labelTahun.setText(String.valueOf(keretaApi.getTahunProduksi()));
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error " + e.getMessage());
+        }
+        clear();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
