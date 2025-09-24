@@ -54,6 +54,7 @@ public class FrameKeretaApi extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -124,6 +125,11 @@ public class FrameKeretaApi extends javax.swing.JFrame {
 
         txtStasiunAkhir.setBackground(new java.awt.Color(255, 255, 255));
         txtStasiunAkhir.setForeground(new java.awt.Color(0, 0, 0));
+        txtStasiunAkhir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtStasiunAkhirActionPerformed(evt);
+            }
+        });
 
         txtHarga.setBackground(new java.awt.Color(255, 255, 255));
         txtHarga.setForeground(new java.awt.Color(0, 0, 0));
@@ -250,7 +256,7 @@ public class FrameKeretaApi extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelTahun)
                     .addComponent(jLabel13))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         jButton1.setBackground(new java.awt.Color(0, 102, 0));
@@ -345,7 +351,7 @@ public class FrameKeretaApi extends javax.swing.JFrame {
                     .addComponent(txtStasiunAkhir, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
                 .addGap(48, 48, 48)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -392,6 +398,10 @@ public class FrameKeretaApi extends javax.swing.JFrame {
         clear();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void txtStasiunAkhirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStasiunAkhirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtStasiunAkhirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -428,6 +438,7 @@ public class FrameKeretaApi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

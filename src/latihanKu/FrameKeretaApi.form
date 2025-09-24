@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="resizable" type="boolean" value="false"/>
@@ -146,7 +150,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace pref="51" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -249,6 +253,9 @@
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtStasiunAkhirActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtHarga">
           <Properties>
@@ -379,7 +386,7 @@
                           <Component id="labelTahun" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="35" max="32767" attributes="0"/>
+                      <EmptySpace pref="28" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
