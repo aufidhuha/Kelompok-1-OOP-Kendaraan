@@ -54,7 +54,6 @@ public class truckClass {
     }
 
     public void setharga(int Harga) {
-    public void setharga(int Harga){
         this.harga = Harga;
     }
 
