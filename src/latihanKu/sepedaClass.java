@@ -58,7 +58,7 @@ public class sepedaClass {
         this.berat = berat;
     }
 
-    public String getberat() {
-        return this.berat + " Kg";
+    public double getberat() {
+        return this.berat;
     }
 }
