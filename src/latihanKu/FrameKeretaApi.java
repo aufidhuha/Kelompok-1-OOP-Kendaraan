@@ -17,7 +17,6 @@ public class FrameKeretaApi extends javax.swing.JFrame {
      */
     public FrameKeretaApi() {
         initComponents();
-        
         reset();
     }
 
