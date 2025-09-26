@@ -53,8 +53,10 @@ public class frameTruckClass extends javax.swing.JFrame {
         lbthpro = new javax.swing.JLabel();
         lbharga = new javax.swing.JLabel();
         btnTambah = new javax.swing.JButton();
+        btnTambah1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -176,6 +178,13 @@ public class frameTruckClass extends javax.swing.JFrame {
             }
         });
 
+        btnTambah1.setText("Back");
+        btnTambah1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTambah1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -210,6 +219,10 @@ public class frameTruckClass extends javax.swing.JFrame {
                                     .addComponent(tfthnpro)
                                     .addComponent(tfharga))))
                         .addGap(38, 38, 38))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnTambah1)
+                .addGap(36, 36, 36))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -247,14 +260,17 @@ public class frameTruckClass extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfharga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
                 .addComponent(btnTambah)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
+                .addGap(26, 26, 26)
+                .addComponent(btnTambah1)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void tfwarnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfwarnaActionPerformed
@@ -287,6 +303,12 @@ public class frameTruckClass extends javax.swing.JFrame {
         lbthpro.setText(String.valueOf(trk.gettahunProduk()));
         lbharga.setText(String.valueOf(trk.getharga()));
     }//GEN-LAST:event_btnTambahActionPerformed
+
+    private void btnTambah1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambah1ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        new KendaraanMainFrame().setVisible(true);
+    }//GEN-LAST:event_btnTambah1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -325,6 +347,7 @@ public class frameTruckClass extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnTambah;
+    private javax.swing.JButton btnTambah1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

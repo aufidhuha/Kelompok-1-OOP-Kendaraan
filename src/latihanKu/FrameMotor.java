@@ -51,11 +51,12 @@ public class FrameMotor extends javax.swing.JFrame {
         lblHarga = new javax.swing.JLabel();
         lblStatusPajak = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        btnTutup = new javax.swing.JButton();
+        buttonBack = new javax.swing.JButton();
         tfTipe = new javax.swing.JTextField();
         tfWarna = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("DATA INPUT MOTOR");
@@ -181,11 +182,11 @@ public class FrameMotor extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
-        btnTutup.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnTutup.setText("Tutup");
-        btnTutup.addActionListener(new java.awt.event.ActionListener() {
+        buttonBack.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        buttonBack.setText("Back");
+        buttonBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTutupActionPerformed(evt);
+                buttonBackActionPerformed(evt);
             }
         });
 
@@ -236,7 +237,7 @@ public class FrameMotor extends javax.swing.JFrame {
                         .addComponent(pDataOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(55, 55, 55))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnTutup)
+                        .addComponent(buttonBack)
                         .addGap(96, 96, 96))))
         );
         layout.setVerticalGroup(
@@ -273,7 +274,7 @@ public class FrameMotor extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pDataOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnTutup)
+                .addComponent(buttonBack)
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
@@ -281,10 +282,11 @@ public class FrameMotor extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnTutupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTutupActionPerformed
+    private void buttonBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBackActionPerformed
         // TODO add your handling code here:
-        dispose();
-    }//GEN-LAST:event_btnTutupActionPerformed
+         dispose();
+        new KendaraanMainFrame().setVisible(true);
+    }//GEN-LAST:event_buttonBackActionPerformed
 
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
         // TODO add your handling code here:
@@ -312,6 +314,7 @@ public class FrameMotor extends javax.swing.JFrame {
 
     private void tfWarnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfWarnaActionPerformed
         // TODO add your handling code here:
+       
     }//GEN-LAST:event_tfWarnaActionPerformed
 
     /**
@@ -351,7 +354,7 @@ public class FrameMotor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnTambah;
-    private javax.swing.JButton btnTutup;
+    private javax.swing.JButton buttonBack;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
