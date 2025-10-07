@@ -8,19 +8,12 @@ package latihanKu;
  *
  * @author USER
  */
-public class kapalClass {
+public class kapalClass extends kendaraanClass {
     
-    String merek, mesin, tipe;
-    int harga, tahun_produk;
+    String  mesin;
+   
 
-    public String getMerek() {
-        return merek;
-    }
-
-    public void setMerek(String merek) {
-        this.merek = merek;
-    }
-
+ 
     public String getMesin() {
         return mesin;
     }
@@ -28,30 +21,11 @@ public class kapalClass {
     public void setMesin(String mesin) {
         this.mesin = mesin;
     }
-
-    public String getTipe() {
-        return tipe;
-    }
-
-    public void setTipe(String tipe) {
-        this.tipe = tipe;
-    }
-
-    public int getHarga() {
-        return harga;
-    }
-
-    public void setHarga(int harga) {
-        this.harga = harga;
-    }
-
-    public int getTahun_produk() {
-        return tahun_produk;
-    }
-
-    public void setTahun_produk(int tahun_produk) {
-        this.tahun_produk = tahun_produk;
-    }
-    
-    
+    public void tampil () {
+        System.out.println("Nama Merek\t : " + super.merk);   
+        System.out.println("Tipe\t : " + super.tipe);
+        System.out.println("Tahun Produksi\t : " + super.tahun_produksi);
+        System.out.println("Mesin\t : " + this.mesin);
+        System.out.println("Harga\t : " + super.harga);
+}
 }
