@@ -8,19 +8,10 @@ package latihanKu;
  *
  * @author ASUS
  */
-public class busClass {
+public class busClass extends kendaraanClass{
 
-    String merk, warna, mesin, type, terminal_awal, terminal_akhir;
-    int harga;
-
-    public void setmerk(String merk) {
-        this.merk = merk;
-    }
-
-    public String getmark() {
-        return this.merk;
-    }
-
+    String warna, mesin, terminal_awal, terminal_akhir;
+    
     public void setwarna(String warna) {
         this.warna = warna;
     }
@@ -37,13 +28,6 @@ public class busClass {
         return this.mesin;
     }
 
-    public void settype(String type) {
-        this.type = type;
-    }
-
-    public String gettype() {
-        return this.type;
-    }
 
     public void setterminal_awal(String terminal_awal) {
         this.terminal_awal = terminal_awal;
@@ -60,12 +44,17 @@ public class busClass {
     public String getterminal_akhir() {
         return this.terminal_akhir;
     }
-
-    public void setharga(int harga) {
-        this.harga = harga;
+    
+    
+    public void tampil(){
+        System.out.println("Nama Merk/t: " + super.merk);   
+        System.out.println("Type/t: " + super.tipe);
+        System.out.println("Tahun Produksi/t: " + super.tahun_produksi);
+        System.out.println("Harga/t: " + super.harga);
+        System.out.println("Warna/t: " + this.warna);
+        System.out.println("Mesin/t: " + this.mesin);
+        System.out.println("Terminal Awal/t: " + this.terminal_awal);
+        System.out.println("Terminal Akhir/t: " + this.terminal_akhir);
     }
 
-    public int harga() {
-        return this.harga;
-    }
 }
