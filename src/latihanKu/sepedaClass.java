@@ -8,27 +8,10 @@ package latihanKu;
  *
  * @author ASUS
  */
-public class sepedaClass {
+public class sepedaClass extends kendaraanClass{
 
-    String merk, tipe, warna;
-    int tahunProduksi, harga;
+    String warna;
     double berat;
-
-    public void setmerk(String merk) {
-        this.merk = merk;
-    }
-
-    public String getmerk() {
-        return this.merk;
-    }
-
-    public void settipe(String tipe) {
-        this.tipe = tipe;
-    }
-
-    public String gettipe() {
-        return this.tipe;
-    }
 
     public void setwarna(String warna) {
         this.warna = warna;
@@ -38,27 +21,20 @@ public class sepedaClass {
         return this.warna;
     }
 
-    public void settahunProduksi(int tahunProduksi) {
-        this.tahunProduksi = tahunProduksi;
-    }
-
-    public int gettahunProduksi() {
-        return this.tahunProduksi;
-    }
-
-    public void setharga(int harga) {
-        this.harga = harga;
-    }
-
-    public int getharga() {
-        return this.harga;
-    }
-
     public void setberat(double berat) {
         this.berat = berat;
     }
 
     public double getberat() {
         return this.berat;
+    }
+    
+    public void tampil(){
+        System.out.println("Nama Merk/t: " + super.merk);
+        System.out.println("Tipe/t: " + super.tipe);
+        System.out.println("Tahu Produksi/t: " + super.tahun_produksi);
+        System.out.println("Harga/t: " + super.harga);
+        System.out.println("Warna/t: " + this.warna);
+        System.out.println("Berat/t: " + this.berat);
     }
 }
