@@ -8,27 +8,10 @@ package latihanKu;
  *
  * @author ASUS
  */
-public class truckClass {
+public class truckClass extends kendaraanClass {
 
-    String Merek, Tipe, warna, mesin;
-    int tahun_Produksi, harga;
-
-    public void setMerek(String MerekC) {
-        this.Merek = MerekC;
-    }
-
-    public String getMerek() {
-        return this.Merek;
-    }
-
-    public void setTipe(String TipeC) {
-        this.Tipe = TipeC;
-    }
-
-    public String getTipe() {
-        return this.Tipe;
-    }
-
+    String  warna, mesin;
+  
     public void setWarna(String WarnaC) {
         this.warna = WarnaC;
     }
@@ -45,19 +28,13 @@ public class truckClass {
         return this.mesin;
     }
 
-    public void settahunProduk(int Tahnpro) {
-        this.tahun_Produksi = Tahnpro;
-    }
-
-    public int gettahunProduk() {
-        return this.tahun_Produksi;
-    }
-
-    public void setharga(int Harga) {
-        this.harga = Harga;
-    }
-
-    public int getharga() {
-        return this.harga;
+    public void tampil() {
+            System.out.println("Nama Merek\t : " +super.merk);
+            System.out.println("Tipe\t : " +super.tipe);
+            System.out.println("Warna\t : " +this.warna);
+            System.out.println("Mesin\t : " +this.mesin);
+            System.out.println("Tahun produksi\t : " +super.tahun_produksi);
+            System.out.println("Harga\t :" +super.harga);
+        
     }
 }
