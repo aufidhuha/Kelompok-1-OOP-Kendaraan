@@ -8,28 +8,10 @@ package latihanKu;
  *
  * @author ASUS
  */
-public class motorClass {
+public class motorClass extends kendaraanClass{
 
-    String merek, tipe, warna;
-    int tahun_pembuatan;
-    int harga;
+    String warna;
     boolean status_pajak;
-
-    public void setmerek(String merekQ) {
-        this.merek = merekQ;
-    }
-
-    public String getmerek() {
-        return this.merek;
-    }
-
-    public void settipe(String tipeQ) {
-        this.tipe = tipeQ;
-    }
-
-    public String gettipe() {
-        return this.tipe;
-    }
 
     public void setwarna(String warnaQ) {
         this.warna = warnaQ;
@@ -37,22 +19,7 @@ public class motorClass {
 
     public String getwarna() {
         return this.warna;
-    }
-
-    public void settahun_pembuatan(int tahun_pembuatanQ) {
-        this.tahun_pembuatan = tahun_pembuatanQ;
-    }
-
-    public int gettahun_pembuatan() {
-        return this.tahun_pembuatan;
-    }
-
-    public void setharga(int hargaQ) {
-        this.harga = hargaQ;
-    }
-
-    public int getharga() {
-        return this.harga;
+    
     }
 
     public void setstatus_pajak(boolean status_pajakQ) {
@@ -61,5 +28,15 @@ public class motorClass {
 
     public boolean getstatus_pajak() {
         return this.status_pajak;
+    }
+    
+    public void tampil(){
+        System.out.println("Nama Merk : " + super.merk);
+        System.out.println("Tipe : " + super.tipe);
+        System.out.println("Tahun Produksi : " + super.tahun_produksi);
+        System.out.println("Harga : " + super.harga);
+        System.out.println("Warna : " + this.warna);
+        System.out.println("Status Pajak : " + this.status_pajak);
+         
     }
 }
