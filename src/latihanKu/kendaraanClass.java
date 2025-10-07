@@ -28,6 +28,22 @@ public class kendaraanClass {
     public int getHarga() {
         return harga;
     }
+
+    public void setMerk(String merk) {
+        this.merk = merk;
+    }
+
+    public void setTipe(String tipe) {
+        this.tipe = tipe;
+    }
+
+    public void setTahun_produksi(int tahun_produksi) {
+        this.tahun_produksi = tahun_produksi;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
     
     
     
