@@ -272,16 +272,16 @@ public class framekapal extends javax.swing.JFrame {
         // TODO add your handling code here:
         kapalClass kapal = new kapalClass();
         
-        kapal.setMerek(tMerek.getText());
+        kapal.setMerk(tMerek.getText());
         kapal.setTipe(tTipe.getText());
         kapal.setMesin(tMesin.getText());
         kapal.setHarga(Integer.parseInt(tHarga.getText()));
-        kapal.setTahun_produk(Integer.parseInt(tTahunProduk.getText()));
+        kapal.setTahun_produksi(Integer.parseInt(tTahunProduk.getText()));
         
-        lMerek.setText(kapal.getMerek());
+        lMerek.setText(kapal.getMerk());
         lTipe.setText(kapal.getTipe());
         lMesin.setText(kapal.getMesin());
-        lTahunProduk.setText(String.valueOf(kapal.getTahun_produk()));
+        lTahunProduk.setText(String.valueOf(kapal.getTahun_produksi()));
         lHarga.setText(String.valueOf(kapal.getHarga()));
         
     }//GEN-LAST:event_TinputActionPerformed
