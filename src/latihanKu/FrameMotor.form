@@ -47,7 +47,7 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="tfTahunPembuatan" max="32767" attributes="0"/>
+                          <Component id="tfTahunProduksi" max="32767" attributes="0"/>
                           <Component id="tfHarga" max="32767" attributes="0"/>
                           <Component id="tfStatusPajak" alignment="0" max="32767" attributes="0"/>
                           <Component id="tfTipe" alignment="0" max="32767" attributes="0"/>
@@ -63,7 +63,7 @@
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="27" max="32767" attributes="0"/>
+              <EmptySpace pref="57" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="pDataOutput" min="-2" max="-2" attributes="0"/>
@@ -100,7 +100,7 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="tfTahunPembuatan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfTahunProduksi" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -161,7 +161,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Tahun Pembuatan"/>
+        <Property name="text" type="java.lang.String" value="Tahun Produksi"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
@@ -180,7 +180,7 @@
         <Property name="text" type="java.lang.String" value="Status Pajak"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="tfTahunPembuatan">
+    <Component class="javax.swing.JTextField" name="tfTahunProduksi">
     </Component>
     <Component class="javax.swing.JTextField" name="tfMerek">
     </Component>
@@ -216,30 +216,23 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="127" pref="127" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblTipe" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblWarna" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblMerek" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblHarga" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblStatusPajak" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                          <Component id="lblTahunPembuatan" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblTahunProduksi" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="0" pref="152" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblTahunPembuatan" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblTipe" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblWarna" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblMerek" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblHarga" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblStatusPajak" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="137" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -264,7 +257,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblTahunPembuatan" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblTahunProduksi" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -311,7 +304,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Tahun Pembuatan"/>
+            <Property name="text" type="java.lang.String" value="Tahun Produksi"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
@@ -370,12 +363,12 @@
             <Property name="text" type="java.lang.String" value="Status Pajak"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel20">
+        <Component class="javax.swing.JLabel" name="lblTahunProduksi">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Tahun Pembuatan"/>
+            <Property name="text" type="java.lang.String" value="Tahun Produksi"/>
           </Properties>
         </Component>
       </SubComponents>

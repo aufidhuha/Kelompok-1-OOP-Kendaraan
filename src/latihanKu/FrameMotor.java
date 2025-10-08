@@ -33,7 +33,7 @@ public class FrameMotor extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        tfTahunPembuatan = new javax.swing.JTextField();
+        tfTahunProduksi = new javax.swing.JTextField();
         tfMerek = new javax.swing.JTextField();
         tfHarga = new javax.swing.JTextField();
         tfStatusPajak = new javax.swing.JTextField();
@@ -50,7 +50,7 @@ public class FrameMotor extends javax.swing.JFrame {
         lblTipe = new javax.swing.JLabel();
         lblHarga = new javax.swing.JLabel();
         lblStatusPajak = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
+        lblTahunProduksi = new javax.swing.JLabel();
         buttonBack = new javax.swing.JButton();
         tfTipe = new javax.swing.JTextField();
         tfWarna = new javax.swing.JTextField();
@@ -71,7 +71,7 @@ public class FrameMotor extends javax.swing.JFrame {
         jLabel4.setText("Tipe");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setText("Tahun Pembuatan");
+        jLabel5.setText("Tahun Produksi");
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setText("Harga");
@@ -99,7 +99,7 @@ public class FrameMotor extends javax.swing.JFrame {
         jLabel10.setText("Tipe");
 
         lblTahunPembuatan.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lblTahunPembuatan.setText("Tahun Pembuatan");
+        lblTahunPembuatan.setText("Tahun Produksi");
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel12.setText("Harga");
@@ -122,8 +122,8 @@ public class FrameMotor extends javax.swing.JFrame {
         lblStatusPajak.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblStatusPajak.setText("Status Pajak");
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel20.setText("Tahun Pembuatan");
+        lblTahunProduksi.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblTahunProduksi.setText("Tahun Produksi");
 
         javax.swing.GroupLayout pDataOutputLayout = new javax.swing.GroupLayout(pDataOutput);
         pDataOutput.setLayout(pDataOutputLayout);
@@ -132,25 +132,21 @@ public class FrameMotor extends javax.swing.JFrame {
             .addGroup(pDataOutputLayout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addGroup(pDataOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pDataOutputLayout.createSequentialGroup()
-                        .addGroup(pDataOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel9))
-                        .addGap(127, 127, 127)
-                        .addGroup(pDataOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblTipe)
-                            .addComponent(lblWarna)
-                            .addComponent(lblMerek)
-                            .addComponent(lblHarga)
-                            .addComponent(lblStatusPajak)))
-                    .addGroup(pDataOutputLayout.createSequentialGroup()
-                        .addComponent(jLabel20)
-                        .addGap(94, 94, 94)
-                        .addComponent(lblTahunPembuatan)))
-                .addGap(0, 152, Short.MAX_VALUE))
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel9)
+                    .addComponent(lblTahunProduksi))
+                .addGap(109, 109, 109)
+                .addGroup(pDataOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblTahunPembuatan)
+                    .addComponent(lblTipe)
+                    .addComponent(lblWarna)
+                    .addComponent(lblMerek)
+                    .addComponent(lblHarga)
+                    .addComponent(lblStatusPajak))
+                .addGap(0, 137, Short.MAX_VALUE))
         );
         pDataOutputLayout.setVerticalGroup(
             pDataOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -170,7 +166,7 @@ public class FrameMotor extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pDataOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTahunPembuatan)
-                    .addComponent(jLabel20))
+                    .addComponent(lblTahunProduksi))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pDataOutputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
@@ -220,7 +216,7 @@ public class FrameMotor extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(tfTahunPembuatan)
+                            .addComponent(tfTahunProduksi)
                             .addComponent(tfHarga)
                             .addComponent(tfStatusPajak)
                             .addComponent(tfTipe)
@@ -231,7 +227,7 @@ public class FrameMotor extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(27, Short.MAX_VALUE)
+                .addContainerGap(57, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(pDataOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -260,7 +256,7 @@ public class FrameMotor extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(tfTahunPembuatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tfTahunProduksi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
@@ -291,20 +287,20 @@ public class FrameMotor extends javax.swing.JFrame {
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
         // TODO add your handling code here:
         motorClass kendaraan = new motorClass();
-        kendaraan.setmerek(tfMerek.getText());
-        lblMerek.setText(kendaraan.getmerek());
+        kendaraan.setMerk(tfMerek.getText());
+        lblMerek.setText(kendaraan.getMerk());
         
-        kendaraan.settipe(tfTipe.getText());
-        lblTipe.setText(kendaraan.gettipe());
+        kendaraan.setTipe(tfTipe.getText());
+        lblTipe.setText(kendaraan.getTipe());
                 
         kendaraan.setwarna(tfWarna.getText());
         lblWarna.setText(kendaraan.getwarna());
         
-        kendaraan.settahun_pembuatan(Integer.parseInt(tfTahunPembuatan.getText()));
-        lblTahunPembuatan.setText(String.valueOf(kendaraan.gettahun_pembuatan()));
+        kendaraan.setTahun_produksi(Integer.parseInt(tfTahunProduksi.getText()));
+        lblTahunProduksi.setText(String.valueOf(kendaraan.getTahun_produksi()));
         
-        kendaraan.setharga(Integer.parseInt(tfHarga.getText()));
-        lblHarga.setText(String.valueOf(kendaraan.getharga()));
+        kendaraan.setHarga(Integer.parseInt(tfHarga.getText()));
+        lblHarga.setText(String.valueOf(kendaraan.getHarga()));
         
         kendaraan.setstatus_pajak(Boolean.parseBoolean(tfStatusPajak.getText()));
         lblStatusPajak.setText(String.valueOf(kendaraan.getstatus_pajak()));
@@ -360,7 +356,6 @@ public class FrameMotor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -372,13 +367,14 @@ public class FrameMotor extends javax.swing.JFrame {
     private javax.swing.JLabel lblMerek;
     private javax.swing.JLabel lblStatusPajak;
     private javax.swing.JLabel lblTahunPembuatan;
+    private javax.swing.JLabel lblTahunProduksi;
     private javax.swing.JLabel lblTipe;
     private javax.swing.JLabel lblWarna;
     private javax.swing.JPanel pDataOutput;
     private javax.swing.JTextField tfHarga;
     private javax.swing.JTextField tfMerek;
     private javax.swing.JTextField tfStatusPajak;
-    private javax.swing.JTextField tfTahunPembuatan;
+    private javax.swing.JTextField tfTahunProduksi;
     private javax.swing.JTextField tfTipe;
     private javax.swing.JTextField tfWarna;
     // End of variables declaration//GEN-END:variables
