@@ -263,20 +263,20 @@ public class FrameSepeda extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         sepedaClass kendaraan = new sepedaClass();
-        kendaraan.setmerk(tMerk.getText());
-        LblMerk.setText(kendaraan.getmerk());
+        kendaraan.setMerk(tMerk.getText());
+        LblMerk.setText(kendaraan.getMerk());
         
-        kendaraan.settipe(tTipe.getText());
-        LblTipe.setText(kendaraan.gettipe());
+        kendaraan.setTipe(tTipe.getText());
+        LblTipe.setText(kendaraan.getTipe());
         
         kendaraan.setwarna(tWarna.getText());
         LblWarna.setText(kendaraan.getwarna());
         
-        kendaraan.settahunProduksi(Integer.parseInt(tTahunProduksi.getText()));
-        LblTahunProduksi.setText(String.valueOf(kendaraan.gettahunProduksi()));
+        kendaraan.setTahun_produksi(Integer.parseInt(tTahunProduksi.getText()));
+        LblTahunProduksi.setText(String.valueOf(kendaraan.getTahun_produksi()));
         
-        kendaraan.setharga(Integer.parseInt(tHarga.getText()));
-        LblHarga.setText(String.valueOf(kendaraan.getharga()));
+        kendaraan.setHarga(Integer.parseInt(tHarga.getText()));
+        LblHarga.setText(String.valueOf(kendaraan.getHarga()));
         
         kendaraan.setberat(Double.parseDouble(tBerat.getText()));
         LblBerat.setText(String.valueOf(kendaraan.getberat()));
