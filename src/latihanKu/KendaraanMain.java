@@ -12,89 +12,59 @@ public class KendaraanMain {
     public static void main(String[] args) {
         
         sepedaClass sepeda = new sepedaClass();
-        sepeda.setmerk("Polygon");
-        sepeda.settipe("City Bike");
+        sepeda.setMerk("Polygon");
+        sepeda.setTipe("City Bike");
         sepeda.setwarna("Hitam");
         sepeda.setberat(1.7);
-        sepeda.setharga(2000000);
-        sepeda.settahunProduksi(2021);
+        sepeda.setHarga(2000000);
+        sepeda.setTahun_produksi(2021);
         
-        System.out.println("Merk\t\t: " + sepeda.getmerk());
-        System.out.println("Tipe\t\t: " + sepeda.gettipe());
-        System.out.println("Warna\t\t: " + sepeda.getwarna());
-        System.out.println("Berat\t\t: " + sepeda.getberat());
-        System.out.println("Harga\t\t: " + sepeda.getharga());
-        System.out.println("Produksi\t\t: " + sepeda.gettahunProduksi());
+        sepeda.tampil();
         
         System.out.println("");
         
         motorClass motor = new motorClass();
-        motor.setmerek("Honda");
-        motor.settipe("Vario");
+        motor.setMerk("Honda");
+        motor.setTipe("Vario");
         motor.setwarna("Hitam");
-        motor.setharga(17000000);
-        motor.settahun_pembuatan(2019);
+        motor.setHarga(17000000);
+        motor.setTahun_produksi(2019);
         motor.setstatus_pajak(true);
-        
-        System.out.println("Merk\t\t: " + motor.getmerek());
-        System.out.println("Tipe\t\t: " + motor.gettipe());
-        System.out.println("Warna\t\t: " + motor.getwarna());
-        System.out.println("Harga\t\t: " + motor.getharga());
-        System.out.println("Produksi\t\t: " + motor.gettahun_pembuatan());
-        System.out.println("Pajak\t\t: " + motor.getstatus_pajak());
+        motor.tampil();
         
         System.out.println("");
         
         truckClass truck = new truckClass();
-        truck.setMerek("Mitsubishi");
+        truck.setMerk("Mitsubishi");
         truck.setTipe("Fuso 300");
         truck.setWarna("Kuning");
         truck.setmesin("4V12-2AT4");
-        truck.setharga(350000000);
-        truck.settahunProduk(2017);
-        
-        System.out.println("Merk\t\t: " + truck.getMerek());
-        System.out.println("Tipe\t\t: " + truck.getTipe());
-        System.out.println("Warna\t\t: " + truck.getWarna());
-        System.out.println("Mesin\t\t: " + truck.getmesin());
-        System.out.println("Harga\t\t: " + truck.getharga());
-        System.out.println("Produk\t\t: " + truck.gettahunProduk());
+        truck.setHarga(350000000);
+        truck.setTahun_produksi(2017);
+        truck.tampil();
         
         System.out.println("");
         
         busClass bus = new busClass();
-        bus.setmerk("Hino");
-        bus.settype("Medium Bus");
+        bus.setMerk("Hino");
+        bus.setTipe("Medium Bus");
         bus.setmesin("N04C-WV");
         bus.setwarna("Biru");
-        bus.setharga(20000);
+        bus.setHarga(20000);
         bus.setterminal_awal("Terminal Arjosari Malang");
         bus.setterminal_akhir("Terminal Bungurasih");
-        
-        System.out.println("Merk\t\t: " + bus.getmark());
-        System.out.println("Tipe\t\t: " + bus.gettype());
-        System.out.println("Mesin\t\t: " + bus.getmesin());
-        System.out.println("Warna\t\t: " + bus.warna);
-        System.out.println("H-Tiker\t\t: " + bus.harga());
-        System.out.println("Berangkat\t: " + bus.getterminal_awal());
-        System.out.println("Berhenti\t\t: " + bus.getterminal_akhir());
+        bus.tampil();
         
         System.out.println("");
         
         keretaApiClass keretaApi = new keretaApiClass();
-        keretaApi.setNamaKereta("Argo Bromo");
-        keretaApi.setTipeKereta("Eksekutif");
+        keretaApi.setMerk("Argo Bromo");
+        keretaApi.setTipe("Eksekutif");
         keretaApi.setHarga(500000);
-        keretaApi.setTahunProduksi(2018);
+        keretaApi.setTahun_produksi(2018);
         keretaApi.setStatiunAwal("Malang");
         keretaApi.setStasiunAkhir("Gambir");
-        
-        System.out.println("Merk\t\t: " + keretaApi.getNamaKereta());
-        System.out.println("Tipe\t\t: " + keretaApi.getTipeKereta());
-        System.out.println("H-Tiket\t\t: " + keretaApi.getHarga());
-        System.out.println("Produksi\t\t: " + keretaApi.getTahunProduksi());
-        System.out.println("Berangkat\t: " + keretaApi.getStasiunAwal());
-        System.out.println("Berhenti\t\t: " + keretaApi.getStasiunAkhir());
+        keretaApi.tampil();
         keretaApi.berjalan();
         keretaApi.berhenti();
         

@@ -8,29 +8,9 @@ package latihanKu;
  *
  * @author ASUS
  */
-public class keretaApiClass {
+public class keretaApiClass extends kendaraanClass{
     
-    String tipeKereta, namaKereta, stasiunAwal, stasiunAkhir;
-    int hargaTiket, tahunProduksi;
-    
-    
-    public void setTipeKereta(String tipeKereta){
-        this.tipeKereta = tipeKereta;
-    }
-    
-    public String getTipeKereta(){
-        return this.tipeKereta;
-    }
-    
-    
-    public void setNamaKereta(String namaKereta){
-        this.namaKereta = namaKereta;
-    }
-    
-    public String getNamaKereta(){
-        return this.namaKereta;
-    }
-    
+    String stasiunAwal, stasiunAkhir;
     
     public void setStatiunAwal(String stasiunAwal){
         this.stasiunAwal = stasiunAwal;
@@ -49,31 +29,21 @@ public class keretaApiClass {
         return this.stasiunAkhir;
     }
     
-    
-    public void setHarga(int harga){
-        this.hargaTiket = harga;
+    public void tampil(){
+        System.out.println("Nama Merk : " + super.merk);   
+        System.out.println("Type : " + super.tipe);
+        System.out.println("Tahun Produksi : " + super.tahun_produksi);
+        System.out.println("Harga : " + super.harga);
+        System.out.println("Warna : " + this.stasiunAwal);
+        System.out.println("Mesin : " + this.stasiunAkhir);
     }
-    
-    public int getHarga(){
-        return this.hargaTiket;
-    }
-    
-    
-    public void setTahunProduksi(int tahunProduksi){
-        this.tahunProduksi = tahunProduksi;
-    }
-    
-    public int getTahunProduksi(){
-        return this.tahunProduksi;
-    }
-    
     
     public void berjalan(){
-        System.out.println("Kereta api " + this.namaKereta + " berangkat dari Stasiun " + this.stasiunAwal);
+        System.out.println("Kereta api " + super.merk + " berangkat dari Stasiun " + this.stasiunAwal);
     }
     
     public void berhenti(){
-        System.out.println("Kereta api " + this.namaKereta + " berhenti di Stasiun " + this.stasiunAkhir);
+        System.out.println("Kereta api " + super.merk + " berhenti di Stasiun " + this.stasiunAkhir);
     }
     
 }
