@@ -394,19 +394,19 @@ public class FrameKeretaApi extends javax.swing.JFrame {
         keretaApiClass keretaApi = new keretaApiClass();
         
         try {
-            keretaApi.setTipeKereta(txtTipeKereta.getText());
-            keretaApi.setNamaKereta(txtMerkKereta.getText());
+            keretaApi.setTipe(txtTipeKereta.getText());
+            keretaApi.setMerk(txtMerkKereta.getText());
             keretaApi.setStatiunAwal(txtStasiunAwal.getText());
             keretaApi.setStasiunAkhir(txtStasiunAkhir.getText());
             keretaApi.setHarga(Integer.parseInt(txtHarga.getText()));
-            keretaApi.setTahunProduksi(Integer.parseInt(txtTahun.getText()));
+            keretaApi.setTahun_produksi(Integer.parseInt(txtTahun.getText()));
             
-            labelTipeKereta.setText(keretaApi.getTipeKereta());
-            labelMerkKereta.setText(keretaApi.getNamaKereta());
+            labelTipeKereta.setText(keretaApi.getTipe());
+            labelMerkKereta.setText(keretaApi.getMerk());
             labelStasiunAwal.setText(keretaApi.getStasiunAwal());
             labelStasiunAkhir.setText(keretaApi.getStasiunAkhir());
             labelHarga.setText(String.valueOf(keretaApi.getHarga()));
-            labelTahun.setText(String.valueOf(keretaApi.getTahunProduksi()));
+            labelTahun.setText(String.valueOf(keretaApi.getTahun_produksi()));
             
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error " + e.getMessage());
