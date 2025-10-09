@@ -74,17 +74,17 @@ public class KendaraanMain {
         pesawat.setnoreg("096456");
         pesawat.setmaskapai("Garuda Indonesia");
         pesawat.setnomor_seri("776253");
-        pesawat.setjenis("Bussines Class");
+        pesawat.setMerk("Bussines Class");
         pesawat.setHarga(1500000);
         pesawat.setpangkalan("Halim Perdana Kusuma");
-        pesawat.settahun_produksi(2009);
+        pesawat.setTahun_produksi(2009);
         
         System.out.println("No Reg\t\t: " + pesawat.getnoreg());
         System.out.println("Maskapai\t\t: " + pesawat.getmaskapai());
         System.out.println("No Seri\t\t: " + pesawat.getnomor_seri());
-        System.out.println("Jenis\t\t: " + pesawat.getjenis());
+        System.out.println("Jenis\t\t: " + pesawat.getMerk());
         System.out.println("Harga\t\t: " + pesawat.getHarga());
         System.out.println("Bandara\t\t: " + pesawat.getpangkalan());
-        System.out.println("Produksi\t\t: " + pesawat.gettahun_produksi());
+        System.out.println("Produksi\t\t: " + pesawat.getTahun_produksi());
     }
 }
