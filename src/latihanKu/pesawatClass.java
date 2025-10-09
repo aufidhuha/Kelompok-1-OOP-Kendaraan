@@ -8,25 +8,16 @@ package latihanKu;
  *
  * @author ASUS
  */
-public class pesawatClass {
-
-    String noreg, jenis, maskapai, nomor_seri, pangkalan;
-    int tahun_produksi, harga;
-
-    public void setnoreg(String noreg) {
+public class pesawatClass extends kendaraanClass {
+    String noreg, maskapai, nomor_seri, pangkalan, jam_terbang;
+    
+    
+    public void setnoreg(String noreg){
         this.noreg = noreg;
     }
 
     public String getnoreg() {
         return this.noreg;
-    }
-
-    public void setjenis(String jenis) {
-        this.jenis = jenis;
-    }
-
-    public String getjenis() {
-        return this.jenis;
     }
 
     public void setmaskapai(String maskapai) {
@@ -53,19 +44,24 @@ public class pesawatClass {
         return this.pangkalan;
     }
 
-    public void settahun_produksi(int tahun_produksi) {
-        this.tahun_produksi = tahun_produksi;
+    public String getjam_terbang(){
+        return this.jam_terbang;
     }
 
-    public int gettahun_produksi() {
-        return this.tahun_produksi;
+    public void setJam_terbang(String jam_terbang) {
+        this.jam_terbang = jam_terbang;
     }
-
-    public void setHarga(int harga) {
-        this.harga = harga;
+    
+    
+    
+    public void tampil(){
+        System.out.println("Jenis : " + super.tipe);
+        System.out.println("Tahun Produksi : " + super.tahun_produksi);
+        System.out.println("Noreg : " + this.noreg);
+        System.out.println("Maskapai : " + this.maskapai);
+        System.out.println("Nomor Seri : " + this.nomor_seri);
+        System.out.println("Pangkalan : " + this.pangkalan);
+        System.out.println("Jam Terbang : " + this.jam_terbang);
     }
-
-    public int getHarga() {
-        return this.harga;
-    }
+    
 }
