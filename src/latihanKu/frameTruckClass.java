@@ -289,19 +289,19 @@ public class frameTruckClass extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         truckClass trk = new truckClass();
-        trk.setMerek(tfmerek.getText());
+        trk.setMerk(tfmerek.getText());
         trk.setTipe(tftipe.getText());
         trk.setWarna(tfwarna.getText()); 
         trk.setmesin(tfmesin.getText());
-        trk.settahunProduk(Integer.parseInt(tfthnpro.getText()));
-        trk.setharga(Integer.parseInt(tfharga.getText()));
+        trk.setTahun_produksi(Integer.parseInt(tfthnpro.getText()));
+        trk.setHarga(Integer.parseInt(tfharga.getText()));
         
-        lbmerek.setText(trk.getMerek());
+        lbmerek.setText(trk.getMerk());
         lbtipe.setText(trk.getTipe());
         lbwarna.setText(trk.getWarna());
         lbmesin.setText(trk.getmesin());
-        lbthpro.setText(String.valueOf(trk.gettahunProduk()));
-        lbharga.setText(String.valueOf(trk.getharga()));
+        lbthpro.setText(String.valueOf(trk.getTahun_produksi()));
+        lbharga.setText(String.valueOf(trk.getHarga()));
     }//GEN-LAST:event_btnTambahActionPerformed
 
     private void btnTambah1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambah1ActionPerformed
