@@ -325,11 +325,11 @@ public class FrameBus extends javax.swing.JFrame {
     private void btnTampilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTampilActionPerformed
         // TODO add your handling code here:
         busClass kendaraan = new busClass();
-        kendaraan.setmerk(tMerk.getText());
-        vMerk.setText(kendaraan.getmark());
+        kendaraan.setMerk(tMerk.getText());
+        vMerk.setText(kendaraan.getMerk());
         
-        kendaraan.settype(tType.getText());
-        vType.setText(kendaraan.gettype());
+        kendaraan.setTipe(tType.getText());
+        vType.setText(kendaraan.getTipe());
         
         kendaraan.setmesin(tMesin.getText());
         vMesin.setText(kendaraan.getmesin());
@@ -343,8 +343,8 @@ public class FrameBus extends javax.swing.JFrame {
         kendaraan.setterminal_akhir(tTerminalAkhir.getText());
         vTerminalAkhir.setText(kendaraan.getterminal_akhir());
         
-        kendaraan.setharga(Integer.parseInt(tHarga.getText()));
-        vHarga.setText(String.valueOf(kendaraan.harga()));
+        kendaraan.setHarga(Integer.parseInt(tHarga.getText()));
+        vHarga.setText(String.valueOf(kendaraan.getHarga()));
     }//GEN-LAST:event_btnTampilActionPerformed
 
     private void btnTampil1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTampil1ActionPerformed
